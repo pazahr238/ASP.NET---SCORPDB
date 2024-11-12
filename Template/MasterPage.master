@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+
+     <meta charset="utf-8"/>   
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="../boot/mystyle.css"/>
+    <link rel="stylesheet" href="../boot/bootstrap.min.css"/>
+  <script src="../boot/jquery.min.js"></script>
+  <script src="../boot/popper.min.js"></script>
+  <script src="../boot/bootstrap.min.js"></script>
+  <style>
+  
+  </style>
+  
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+</head>
+<body>
+
+  <div class="jumbotron text-center myjumbotron bg-white">
+    <p style="font-size:4vw; font-weight:bold">ScorpDb</p>
+    <p style="font-size:2.40vw;">Scorpion and Scorpion venom peptides Database</p>
+  </div>
+
+<%--<nav class="navbar bg-dark navbar-dark justify-content-center" style="direction:ltr">
+  
+    &nbsp
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    <ul class="navbar-nav" id="menufont">
+        <li class="nav-item">
+        <a class="nav-link text-center" href="Default.aspx">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="About.aspx">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="SSearch.aspx">Scorpion Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="SPSearch.aspx">Scorpion Peptide Search</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-center" href="Treatment.aspx">Treatment Guidelines</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link text-center" href="Contact.aspx">Contact Us</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link text-center" href="whats.aspx">What's New</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="faq.aspx">Frequently Asked Questions</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>--%>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
+  <a class="navbar-brand" href="default.aspx">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="About.aspx">About</a>
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="SSearch.aspx">Scorpion Search</a>
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="SPSearch.aspx">Scorpion Peptide Search</a>
+      </li> 
+        <%--<li class="nav-item mr-4">
+        <a class="nav-link" href="Treatment.aspx">Treatment Guidelines</a>
+        </li>--%>
+        <li class="nav-item mr-4">
+        <a class="nav-link" href="Contact.aspx">Contact Us</a>
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="Whats.aspx">What's New</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="faq.aspx">Frequently Asked Questions</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
+
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    <div class="jumbotron text-center jumbot-bottom">
+    <div>© Copyright 2024, Scorpdb.com, All rights reserved. </div>
+     <div>    Scorpion photos of the main page by Dr. Masoumeh Baradaran, Dr. Fatemeh Salabi, Dr. Ahmad Ghorbani, and Mohammad Hossein Jahan-Mahin</div>
+        <div>    Owner: <a href="mailto:mb.baradaran@gmail.com" target="_blank" style="text-decoration:none">Dr. Masoumeh Baradaran</a> </div>
+     <div>   Developer: <a href="https://www.pazahr.ir/en" target="_blank" style="text-decoration:none">Dr. Ali Pazahr</a> </div>
+
+    </div>
+
+    
+
+</body>
+</html>
